@@ -46,30 +46,5 @@ public class App {
         }
    }
 
-   /* Alternative(better) implementation from LLD Sprint - restaurant rating application
    
-    *  public static void run(List<String> commandLineArgs){
-
-        Configuration conf = Configuration.getInstance();
-
-        CommandRegistry commandRegistry = conf.getCommandRegistry();
-        
-        String inputFile = commandLineArgs.get(0).split("=")[1];
-        // commandLineArgs = "INPUT_FILE=sample_input/sample_input_one.txt"
-        try(BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
-
-            while (true) {
-                String line = reader.readLine();
-                if (line == null){
-                    break;
-                }
-                commandRegistry.invokeCommand(line);
-            }
-            //System.out.println();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    */
 }
